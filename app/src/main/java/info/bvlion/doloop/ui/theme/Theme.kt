@@ -1,9 +1,11 @@
 package info.bvlion.doloop.ui.theme
+
 import android.app.UiModeManager
 import android.content.Context
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -265,7 +267,7 @@ fun DoLoopTheme(
 
   MaterialTheme(
   colorScheme = colorScheme,
-  typography = AppTypography,
+  typography = Typography(),
   content = content
   )
 }
