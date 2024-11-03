@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
+import info.bvlion.doloop.ui.component.BottomNav
 import info.bvlion.doloop.ui.theme.DoLoopTheme
 
 @AndroidEntryPoint
@@ -24,6 +25,7 @@ class MainActivity : ComponentActivity() {
         Scaffold(
           modifier = Modifier.fillMaxSize(),
           bottomBar = {
+            BottomNav()
           }
         ) { innerPadding ->
           Greeting(
