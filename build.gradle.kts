@@ -5,4 +5,6 @@ plugins {
   alias(libs.plugins.androidx.room) apply false
   alias(libs.plugins.dagger.hilt) apply false
   alias(libs.plugins.devtools.ksp) apply false
+  alias(libs.plugins.firebase.crashlytics.gradle) apply false
+  alias(libs.plugins.google.services) apply false
 }

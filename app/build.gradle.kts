@@ -5,6 +5,8 @@ plugins {
   alias(libs.plugins.androidx.room)
   alias(libs.plugins.dagger.hilt)
   alias(libs.plugins.devtools.ksp)
+  alias(libs.plugins.firebase.crashlytics.gradle)
+  alias(libs.plugins.google.services)
 }
 
 android {
@@ -68,6 +70,9 @@ dependencies {
   implementation(libs.androidx.room.ktx)
   implementation(libs.dagger.hilt.android)
   ksp(libs.dagger.hilt.compiler)
+  implementation(platform(libs.firebase.bom))
+  implementation(libs.firebase.crashlytics)
+  implementation(libs.firebase.analytics)
   testImplementation(libs.junit)
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.espresso.core)
